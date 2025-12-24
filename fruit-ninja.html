@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切水果游戏 - Fruit Ninja</title>
+    <link rel="stylesheet" href="fruit-ninja.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+
+        <!-- 游戏UI -->
+        <div id="score-display">
+            <span>🍎 分数: </span>
+            <span id="score">0</span>
+        </div>
+
+        <div id="lives-display">
+            <span id="lives">❤️❤️❤️</span>
+        </div>
+
+        <div id="combo-display"></div>
+
+        <!-- 开始界面 -->
+        <div id="start-screen" class="screen">
+            <h1>🍉 切水果 🍊</h1>
+            <p>用鼠标滑动切开水果</p>
+            <p>小心炸弹 💣</p>
+            <button id="start-btn">开始游戏</button>
+        </div>
+
+        <!-- 游戏结束界面 -->
+        <div id="game-over-screen" class="screen hidden">
+            <h1>游戏结束!</h1>
+            <p>最终得分: <span id="final-score">0</span></p>
+            <p>最高记录: <span id="high-score">0</span></p>
+            <button id="restart-btn">再玩一次</button>
+        </div>
+    </div>
+
+    <script src="fruit-ninja.js"></script>
+</body>
+</html>
