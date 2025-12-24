@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Claude Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello Claude Web</h1>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="greeting-card">
+                <h2>Welcome!</h2>
+                <p class="greeting-text">This is a simple web application powered by Claude.</p>
+                <p class="timestamp" id="timestamp"></p>
+            </section>
+
+            <section class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>Dark/Light theme toggle with preference persistence</li>
+                    <li>Responsive design</li>
+                    <li>Clean, modern interface</li>
+                </ul>
+            </section>
+
+            <section class="message-section">
+                <h3>Leave a Message</h3>
+                <form id="message-form">
+                    <input type="text" id="user-name" placeholder="Your name" required>
+                    <textarea id="user-message" placeholder="Your message..." required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="messages-list" class="messages-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with Claude &hearts;</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
